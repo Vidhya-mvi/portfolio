@@ -35,18 +35,7 @@ export default function Hero() {
       </div>
 
       
-      <motion.div
-        className="w-72 h-72 mt-12 md:mt-0 rounded-full border-4 border-primary shadow-xl overflow-hidden z-10"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.6 }}
-      >
-        <img
-          src="/public/imgpro.jpg"
-          alt="Vidhya"
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
+     
 
       <motion.div
         className="absolute top-[20%] left-[10%] text-4xl text-sky-500 z-0"
