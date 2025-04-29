@@ -3,13 +3,14 @@ import { FaArrowDown, FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
 
 export default function Hero() {
   return (
-<section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 bg-gradient-to-b from-gray-50 to-white dark:bg-gradient-to-b dark:from-black dark:to-gray-900 text-black dark:text-white relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center md:flex-row px-6 md:px-20 py-12 bg-gradient-to-b from-gray-50 to-white dark:bg-gradient-to-b dark:from-black dark:to-gray-900 text-black dark:text-white relative overflow-hidden">
 
-<div className="absolute inset-0 opacity-5 dark:opacity-9 pointer-events-none 
-  [background-image:repeating-linear-gradient(45deg,#000_0_1px,transparent_1px_10px)] 
-  dark:[background-image:repeating-linear-gradient(45deg,#fff_0_1px,transparent_1px_10px)]"
- /> 
-      <div className="flex flex-col items-start max-w-xl z-10">
+      <div className="absolute inset-0 opacity-5 dark:opacity-9 pointer-events-none 
+        [background-image:repeating-linear-gradient(45deg,#000_0_1px,transparent_1px_10px)] 
+        dark:[background-image:repeating-linear-gradient(45deg,#fff_0_1px,transparent_1px_10px)]" 
+      /> 
+
+      <div className="flex flex-col items-center md:items-start max-w-xl z-10 text-center md:text-left">
         <motion.h1
           className="text-4xl sm:text-5xl font-bold leading-tight"
           initial={{ opacity: 0, x: -20 }}
@@ -34,9 +35,6 @@ export default function Hero() {
         </motion.p>
       </div>
 
-      
-     
-
       <motion.div
         className="absolute top-[20%] left-[10%] text-4xl text-sky-500 z-0"
         initial={{ opacity: 0, x: -100, y: -100 }}
@@ -56,13 +54,13 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
-  className="absolute top-[15%] right-[5%] text-4xl text-blue-500 z-0"
-  initial={{ opacity: 0, x: 100, y: -100 }}
-  animate={{ opacity: 1, x: 0, y: 0 }}
-  transition={{ duration: 1.4 }}
->
-  <FaCss3 className="hover:scale-125 transition-transform animate-float-slow" />
-</motion.div>
+        className="absolute top-[15%] right-[5%] text-4xl text-blue-500 z-0"
+        initial={{ opacity: 0, x: 100, y: -100 }}
+        animate={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ duration: 1.4 }}
+      >
+        <FaCss3 className="hover:scale-125 transition-transform animate-float-slow" />
+      </motion.div>
 
       <motion.div
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-primary text-xl animate-bounce z-10"
