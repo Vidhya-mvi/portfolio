@@ -8,7 +8,7 @@ export default function Hero() {
 <div className="absolute inset-0 opacity-5 dark:opacity-9 pointer-events-none 
   [background-image:repeating-linear-gradient(45deg,#000_0_1px,transparent_1px_10px)] 
   dark:[background-image:repeating-linear-gradient(45deg,#fff_0_1px,transparent_1px_10px)]"
- /> can u make it from both side like a x shape
+ /> 
       <div className="flex flex-col items-start max-w-xl z-10">
         <motion.h1
           className="text-4xl sm:text-5xl font-bold leading-tight"
