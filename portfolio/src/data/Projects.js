@@ -11,7 +11,7 @@ export const projects = [
     title: "React Blog (Frontend Only)",
     description: "Frontend part of a blog system built using React.",
     image: "/assets/blog-react.png",
-    live: "", 
+    live: "https://react-blog-iota-wine.vercel.app/", 
     github: "https://github.com/Vidhya-mvi/ReactBlog",
     stack: ["React", "CSS"],
   },

@@ -40,7 +40,7 @@ export default function Hero() {
         transition={{ delay: 0.6 }}
       >
         <img
-          src="/public/pic.webp"
+          src="/public/imgpro.jpg"
           alt="Vidhya"
           className="w-full h-full object-cover"
         />
