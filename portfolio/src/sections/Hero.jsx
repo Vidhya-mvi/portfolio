@@ -5,8 +5,10 @@ export default function Hero() {
   return (
 <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12 bg-gradient-to-b from-gray-50 to-white dark:bg-gradient-to-b dark:from-black dark:to-gray-900 text-black dark:text-white relative overflow-hidden">
 
-      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] dark:opacity-10 pointer-events-none" />
-
+<div className="absolute inset-0 opacity-5 dark:opacity-9 pointer-events-none 
+  [background-image:repeating-linear-gradient(45deg,#000_0_1px,transparent_1px_10px)] 
+  dark:[background-image:repeating-linear-gradient(45deg,#fff_0_1px,transparent_1px_10px)]"
+ /> can u make it from both side like a x shape
       <div className="flex flex-col items-start max-w-xl z-10">
         <motion.h1
           className="text-4xl sm:text-5xl font-bold leading-tight"
