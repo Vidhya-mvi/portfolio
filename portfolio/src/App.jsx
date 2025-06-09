@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import AOS from "aos";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -6,6 +8,10 @@ import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ once: false });
+  }, []);
+
   return (
     <div className="dark:bg-bgDark bg-white dark:text-white text-black transition duration-300">
       <Navbar />
@@ -13,7 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Resume />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
